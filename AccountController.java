@@ -21,7 +21,7 @@ public class AccountController {
     public AccountController(AccountService accountService) {
         this.accountService = accountService;
     }
-    //add Account REST API
+    //ADD ACCOUNT REST API
     @PostMapping
     public ResponseEntity<AccountDto> addAccount(@RequestBody AccountDto accountDto)
     //requestbody converts json to java object
@@ -75,3 +75,4 @@ public class AccountController {
         return ResponseEntity.ok("Account deleted");
     }
 }
+
